@@ -7,7 +7,7 @@ import { userCards } from "./about-dummy-data";
 
 const AboutSection = () => {
     return (
-        <div>
+        <div id='chi-siamo'>
             <section className="testimonial_section py-5 position-relative text-center">
                 <div className="container-fluid container-lg">
                     <h2 className="main_heading font-poppins fs-36 fst-normal fw-600 line-height-30 text-uppercase  exta_style_img">
