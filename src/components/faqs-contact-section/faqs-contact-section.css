@@ -1,0 +1,91 @@
+.frequentlty_asked_question_section {
+    margin-top: 70px;
+}
+
+.accordion.faq_accordion>.accordion-item {
+    margin-bottom: 20px;
+    padding: 19px 23px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 0px #00000014;
+}
+
+.accordion.faq_accordion>.accordion-item>.accordion-header>.accordion-button {
+    font-weight: var(--fw-500);
+    padding-left: 40px;
+}
+
+.accordion.faq_accordion>.accordion-item>.accordion-header>.accordion-button::after {
+    background-image: url("../../assets/acc_closed-icon.svg");
+    background-position: center;
+    margin-left: unset;
+    position: absolute;
+    left: 0;
+}
+
+.accordion.faq_accordion>.accordion-item>.accordion-header>.accordion-button:not(.collapsed)::after {
+    background-image: url("../../assets/acc_open-icon.svg");
+    transform: unset;
+    background-position: center;
+}
+
+.main_heading.frequently_asked_main_heading::after {
+    content: url("../../assets/style3.png");
+    position: absolute;
+    top: -50%;
+    right: 0;
+    transform: translateY(-13%);
+}
+
+.main_heading.contact_section::after {
+    content: url("../../assets/style3.png");
+    position: absolute;
+    top: -50%;
+    left: 0;
+    transform: translateY(-13%);
+}
+
+/* contactc Section */
+.contact_addres_box {
+    border: 1px solid var(--light-border);
+    padding: 28px;
+    border-radius: 9px;
+}
+
+.addres_singel_wrapper {
+    margin-bottom: 17px;
+}
+
+.addres_singel_wrapper>.address_single_text {
+    color: var(--lightgray);
+}
+
+.Message_note {
+    color: var(--darkgray);
+    max-width: 240px;
+}
+
+.form-control {
+    border: 1px solid var(--light-border);
+    font-size: var(--fs-14);
+    color: #999999;
+    min-height: 45px;
+}
+
+.form-control::placeholder {
+    color: #999999 !important;
+    font-family: Poppins !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 70.5% !important;
+}
+
+.form-control:focus {
+    border-color: unset;
+    box-shadow: unset;
+    color: #999999;
+}
+
+.textarea.form-control {
+    height: 115px;
+}

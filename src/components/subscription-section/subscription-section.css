@@ -1,0 +1,35 @@
+.news_letter_section {
+    padding: 35px 0 27px;
+    background-image: url("../../assets/newsletterbg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  
+  .news_letter_text {
+    max-width: 503px; 
+  }
+  
+  .newsLwtter_input_wrapper>.Send_icon_wrapper {
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    background-color: var(--primary);
+    border: unset;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .newsLwtter_input {
+    padding-right: 60px;
+  }
+
+  .newsLwtter_input::placeholder{
+    color: #979797 !important; 
+    font-family: Poppins !important;
+    font-size: 17px !important;
+    font-weight: 400 !important;
+    line-height: 13px !important;
+  }
+  

@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300&display=swap');
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-17: 1.0625rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-21: 1.3125rem;
+  --fs-24: 1.5rem;
+  --fs-30: 1.875rem;
+  --fs-32: 2rem;
+  --fs-34: 2.125rem;
+  --fs-36: 2.25rem;
+  --fs-50: 3.12rem;
+  --fs-64: 4rem;
+
+  /* font Weight var */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  /* line heights vars */
+  --line-height-13: 13px;
+  --line-height-16: 16px;
+  --line-height-17: 17px;
+  --line-height-18: 18px;
+  --line-height-21: 21px;
+  --line-height-23: 23px;
+  --line-height-25: 25px;
+  --line-height-26: 26px;
+  --line-height-27: 27px;
+  --line-height-29: 29px;
+  --line-height-30: 30px;
+  --line-height-33: 33px;
+  --line-height-35: 35px;
+  --line-height-40: 40px;
+  --line-height-50: 50px;
+  --line-height-56: 56px;
+
+  /* colors vars */
+  --white: #ffffff;
+  --gray-white: rgba(251, 251, 251, 1);
+  --gray-white-extra: rgba(249, 249, 249, 1);
+  --black: #1E1E1E;
+  --primary: #86BE3F;
+  --silver: #CBB702;
+  --light-border: #DEDEDE;
+  --gray: #8A8888;
+  --bg-body: #FCFCFC;
+  --bg-small-card: #F5F5F5;
+  --darkgray: #363636;
+  --exra-darkgary: #9A9A9A;
+  --lightgray: #666666;
+  --extra-lightgray: #54595F;
+  --light1: #C9C9C9;
+  --black-shadow: rgba(0, 0, 0, 0.1);
+  --box-shadow-extradark: rgba(0, 0, 0, 0.06);
+  --box-shadow-extradark: rgba(0, 0, 0, 0.08);
+  --black-light-shadow: rgba(0, 0, 0, 0.12);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.primary-text-color{
+  color: #8A8888 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary-bg-color{
+  background-color: #86BE3F !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gray-white-color{
+  color: var(--gray-white) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.darkgray-color{
+  color: var(--darkgray) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.black-color{
+  color: var(--black) !important;
+}
+
+.lightgray-color{
+  color: var(--lightgray) !important
+}
+
+.font-poppins{
+  font-family: Poppins !important;
+}
+
+.font-inter{
+  font-family: Inter !important;
+}
+
+.fw-400{
+  font-weight: var(--fw-400);
+}
+
+.fw-500{
+  font-weight:var(--fw-500);
+}
+.fw-600{
+  font-weight: var(--fw-600);
+}
+
+.fw-700{
+  font-weight: var(--fw-700);
+}
+
+.fw-800{
+  font-weight: var(--fw-800);
+}
+
+.fs-12{
+  font-size: var(--fs-12);
+}
+
+.fs-14{
+  font-size: var(--fs-14);
+}
+
+.fs-16{
+  font-size: var(--fs-16);
+}
+
+.fs-17{
+  font-size: var(--fs-17);
+}
+
+.fs-18{
+  font-size: var(--fs-18);
+}
+
+.fs-20{
+  font-size: var(--fs-20);
+}
+
+.fs-21{
+  font-size: var(--fs-21);
+}
+
+.fs-24{
+  font-size: var(--fs-24);
+}
+
+.fs-30{
+  font-size: var(--fs-30);
+}
+
+.fs-32{
+  font-size: var(--fs-32);
+}
+
+.fs-34{
+  font-size: var(--fs-34);
+}
+
+.fs-36{
+  font-size: var(--fs-36);
+}
+
+.fs-50{
+  font-size: var(--fs-50);
+}
+
+.fs-64{
+  font-size: var(--fs-64);
+}
+
+.line-height-13{
+  line-height: var(--line-height-13) !important;
+}
+
+.line-height-16{
+  line-height: var(--line-height-16) !important;
+}
+
+.line-height-17{
+  line-height: var(--line-height-17) !important;
+}
+
+.line-height-18{
+  line-height: var(--line-height-18) !important;
+}
+
+.line-height-21{
+  line-height: var(--line-height-21) !important;
+}
+
+.line-height-23{
+  line-height: var(--line-height-23) !important;
+}
+
+.line-height-25{
+  line-height: var(--line-height-25) !important;
+}
+
+.line-height-26{
+  line-height: var(--line-height-26) !important;
+}
+
+.line-height-27{
+  line-height: var(--line-height-18) !important;
+}
+
+.line-height-29{
+  line-height: var(--line-height-29) !important;
+}
+
+.line-height-30{
+  line-height: var(--line-height-30) !important;
+}
+
+.line-height-33{
+  line-height: var(--line-height-33) !important;
+}
+
+.line-height-35{
+  line-height: var(--line-height-35) !important;
+}
+
+.line-height-40{
+  line-height: var(--line-height-40) !important;
+}
+
+.line-height-50{
+  line-height: var(--line-height-50) !important;
+}
+
+.line-height-56{
+  line-height: var(--line-height-56) !important;
 }

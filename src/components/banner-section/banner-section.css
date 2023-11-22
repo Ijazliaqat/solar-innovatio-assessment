@@ -1,0 +1,25 @@
+.banner_section {
+    height: 698px;
+    width: 100%;
+    background-image: url("../../assets/bannerimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+@media (max-width: 767px) {
+    .banner_section {
+        height: 350px;
+    }
+
+    .banner_header{
+        font-size: 46px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner_section {
+        height: 500px;
+    }
+}
